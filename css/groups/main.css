@@ -8,6 +8,7 @@ body {
 
 }
 
+/****导航栏****/
 .nav{
     margin:0 auto;
     width:30rem;
@@ -30,7 +31,7 @@ body {
     font-size:.5rem;
 }
 
-.nav > ul li:list-child a{
+.nav > ul li:last-child a {
     margin-right: 0;
 }
 
@@ -38,14 +39,21 @@ body {
 
 }
 
-.nav-img{
+
+/****主内容****/
+.content{
     width:30rem;
     margin:0 auto;
+}
+
+
+/*第一列信息*/
+.cont-one{
     display:flex;
     justify-content:space-around;
 }
 
-.nav-img > span{
+.cont-one > span{
     width:7rem;
     height:7rem;
     font-size:.4rem;
@@ -56,22 +64,20 @@ body {
     overflow:hidden;
 }
 
-.nav-img > span  img{
+.cont-one > span  img{
     width:100%;
     height:100%;
 }
 
-.nav-img span a:last-child{
+.cont-one span a:last-child{
     position: relative;
     bottom: 10%;
     padding:10px;
     background-color:rgba(38,38,38,.5);
 }
 
-.content{
 
-}
-
+/****页脚****/
 .footer{
 
 
