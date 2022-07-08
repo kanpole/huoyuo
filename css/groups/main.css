@@ -1,3 +1,6 @@
+@import '../main.css';
+@import '../_base.css';
+
 body {
     background-image:url(../../images/dark.png);
     background-repeat:repeat;
@@ -5,36 +8,71 @@ body {
 
 }
 
-.nav-header {
+.nav{
+    margin:0 auto;
+    width:30rem;
+}
+
+.nav > ul{
+    padding:0;
     width:100%;
-    height:auto;
+}
+
+.nav > ul li{
+    display:inline;
+}
+
+.nav > ul li a {
+    display:inline-block;
+    width:5rem;
+    line-height: 3;
+    text-align:center;
+    font-size:.5rem;
+}
+
+.nav > ul li:list-child a{
+    margin-right: 0;
+}
+
+.nav > ul li a:hover {
+
+}
+
+.nav-img{
+    width:30rem;
     margin:0 auto;
-    clear:both;
+    display:flex;
+    justify-content:space-around;
 }
 
-.nav-label{
-    text-align:left;
-    float:left;
-
-
-}
-
-.nav-label > label{
+.nav-img > span{
+    width:7rem;
+    height:7rem;
+    font-size:.4rem;
+    text-align:center;
     display:block;
-    margin:0 auto;
-    padding:10px 0 0 10px;
-    
+    border:.1rem solid white;
+    border-radius:.5rem;
+    overflow:hidden;
 }
 
-.nav-label > .nav-text-big{
-    font-size:4em;
+.nav-img > span  img{
+    width:100%;
+    height:100%;
+}
+
+.nav-img span a:last-child{
+    position: relative;
+    bottom: 10%;
+    padding:10px;
+    background-color:rgba(38,38,38,.5);
+}
+
+.content{
 
 }
 
+.footer{
 
-.nav-header-label{
-    display:block;
-    float:left;
-    margin: 80px 10px 0 10px;
-    
+
 }
