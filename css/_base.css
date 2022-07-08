@@ -1,0 +1,138 @@
+/*****基础设置******/
+html {
+    font-size: 24px;
+    box-sizing: border-box; /*边框盒模型,width,height包含border,padding的宽度*/
+}
+
+/*将所有元素继承边框盒模型,并去除边框和内边距*/
+*, *::before, *::after {
+    box-sizing:inherit;
+    border:0;
+    padding:0;
+}
+
+/*自适应设置,等比例设置根字体大小,如果字体过大,可以在body元素中重新设置字体大小,这个根元素只用来做自适应*/
+/*以某个屏幕尺寸布局,然后根据这个尺寸缩小或放大的倍数来等比例增加font-size*/
+@media screen and (min-width:320px){
+    html {
+        font-size: 10px;
+    }
+
+
+}
+
+@media screen and (min-width:768px){
+    html {
+        /*768 / 320 =2.4*/
+        font-size: 24px
+    }
+
+}
+
+@media screen and (min-width:1440px){
+    html {
+        /*1440 / 320 = 4.5*/
+        font-size: 45px;
+    }
+
+}
+
+/*某些浏览器的表单元素默认不会继承字体样式*/
+button,input,select,textarea {
+    font-family: inherit;
+    font-size: 100%;
+
+    /*某些浏览器,不同表单元素使用不同的盒模型,所有重置一下模型*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+textarea{
+    overflow:auto;
+}
+
+body {
+    /*html是做自适应用的,这个是用来重置字体大小的*/
+    font-size:16px;
+}
+
+li{
+    list-style-type:none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:focus, a:hover {
+
+}
+
+a:active {
+
+}
+
+
+
+/******有趣的字体阴影效果******/
+
+/*凹槽字体*/
+.text-shadow {
+        background-color: #333;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: rgba(255,255,255,0.5) 2px 3px 6px;
+       }
+
+
+
+/*3d动画字体*/
+.text-shadow-3d {
+       	 color: yellow;
+       	 text-shadow: 1px 1px 2px rgba(0,0,0,0.7),
+       	              5px 5px 1px orange,
+       	              6px 6px 2px rgba(0,0,0,0.7),
+       	              10px 10px 1px red,
+       	              11px 11px 2px rgba(0,0,0,0.7),
+       	              15px 15px 1px purple,
+       	              16px 16px 2px rgba(0,0,0,0.7);
+       	 -webkit-animation: text-snake 1s infinite alternate;
+       	 -moz-animation: text-snake 1s infinite alternate;
+       	 -ms-animation: text-snake 1s infinite alternate;
+       	 animation: text-snake 1s infinite alternate;      
+}
+     /* other prefixed animation blocks ommitted for brevity */
+
+       @keyframes text-snake {
+         from {
+         	text-shadow: 1px 1px 2px rgba(0,0,0,0.7),
+       	              5px 5px 1px orange,
+       	              6px 6px 2px rgba(0,0,0,0.7),
+       	              10px 10px 1px red,
+       	              11px 11px 2px rgba(0,0,0,0.7),
+       	              15px 15px 1px purple,
+       	              16px 16px 2px rgba(0,0,0,0.7);
+         }
+         to {
+         	text-shadow: -1px 1px 2px rgba(0,0,0,0.7),
+       	              -5px 5px 1px orange,
+       	              -6px 6px 2px rgba(0,0,0,0.7),
+       	              -10px 10px 1px red,
+       	              -11px 11px 2px rgba(0,0,0,0.7),
+       	              -15px 15px 1px purple,
+       	              -16px 16px 2px rgba(0,0,0,0.7);
+         }
+       }
