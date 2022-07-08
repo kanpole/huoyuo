@@ -100,3 +100,16 @@ button.red {
   margin: 0;
   flex: 1;
 }
+
+a {
+    color: #61677C;
+    text-shadow: 1px 1px 0 #fff;
+    outline: none;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+}
+
+a: hover {
+    
+}
