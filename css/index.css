@@ -1,4 +1,4 @@
-@import 'main.css';
+@import '_fonts.css';
 
 html {
 	font-family: 'Zpix';
@@ -6,6 +6,33 @@ html {
 	color: white;
         text-shadow:2px 2px 1px black;
 	background-color:red;
+}
+
+
+body {
+    	font-family: 'Zpix';
+	font-weight:700;
+	color: white;
+        text-shadow:2px 2px 1px black;
+
+        margin: 0 auto;
+        padding:0;
+        border:0;        
+}
+
+.center{
+    text-align:center;
+}
+
+.center > img{
+    width:250px;
+    height:210px;
+}
+
+.center h1 {
+    padding:0;
+    border:0;
+
 }
 
 input, select, textarea, button {
