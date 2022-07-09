@@ -114,7 +114,6 @@ a:active {
        	 -ms-animation: text-snake 1s infinite alternate;
        	 animation: text-snake 1s infinite alternate;      
 }
-     /* other prefixed animation blocks ommitted for brevity */
 
        @keyframes text-snake {
          from {
