@@ -1,6 +1,6 @@
 /*****基础设置******/
 html {
-    font-size: 24px;
+    font-size: 16px;
     box-sizing: border-box; /*边框盒模型,width,height包含border,padding的宽度*/
 }
 
@@ -85,7 +85,7 @@ a:active {
 
 
 
-/******有趣的字体阴影效果******/
+/******字体阴影效果******/
 
 /*凹槽字体*/
 .text-shadow {
