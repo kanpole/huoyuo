@@ -5,7 +5,9 @@ body {
     background-image:url(../../images/dark.png);
     background-repeat:repeat;
     margin:0 auto;
-
+    font-family: 'Zpix';
+    color: white;
+    
 }
 
 /****µ¼º½À¸****/
@@ -28,7 +30,9 @@ body {
     width:5rem;
     line-height: 3;
     text-align:center;
-    font-size:.5rem;
+    font-size:.7rem;
+    font-weight:bold;
+    color:white;
 }
 
 .nav > ul li:last-child a {
