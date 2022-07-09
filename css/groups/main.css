@@ -83,6 +83,9 @@ body {
     background-color:rgba(38,38,38,.5);
 }
 
+.cont-one span a:last-child:hover{
+    top:0;
+}
 
 /****Ò³½Å****/
 .footer{
