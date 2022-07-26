@@ -10,7 +10,7 @@ body {
     
 }
 
-/****µ¼º½À¸****/
+/****å¯¼èˆªæ ****/
 .nav{
     margin:0 auto;
     width:30rem;
@@ -44,14 +44,14 @@ body {
 }
 
 
-/****Ö÷ÄÚÈİ****/
+/****ä¸»å†…å®¹****/
 .content{
     width:30rem;
     margin:0 auto;
 }
 
 
-/*µÚÒ»ÁĞĞÅÏ¢*/
+/*ç¬¬ä¸€åˆ—ä¿¡æ¯*/
 .cont-one{
     display:flex;
     justify-content:space-around;
@@ -87,7 +87,7 @@ body {
     top:0;
 }
 
-/****Ò³½Å****/
+/****é¡µè„š****/
 .footer{
 
 

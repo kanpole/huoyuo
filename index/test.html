@@ -1,8 +1,32 @@
-<style>
-  div{
-      height:1rem;
-      
+<html>
+  <head>
+    <style>
+      p {
+          display:inline;
+          border: 2px solid red;
+      }
+    </style>
 
-  }
+  </head>
+  <body>
+    <div>
+      <p>
+        测试
+      </p>
+    </div>
 
-</style>
+    <header></header>
+    
+    <script>
+      const para = document.querySelector('p');
+      para.addEventListener('click',updateName);
+
+      function updateName(){
+          let name = prompt("输入一个名字");
+          para.textContent = '玩家1:'+ name;
+          
+      }
+    </script>
+    <script src="../js/test.js" defer></script>
+  </body>
+</html>
